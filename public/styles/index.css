@@ -249,6 +249,9 @@ section#contact a {
   font-size: 1.25rem;
   color: var(--white)
 }
+section#contact a:hover {
+  color: var(--dark-green)
+}
 section#contact ul {
   padding-inline: 20px;
 }
