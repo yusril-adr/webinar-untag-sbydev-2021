@@ -1,0 +1,263 @@
+:root {
+  --green: #43957C;
+  --dark-green: #053107;
+  --white: #fff;
+  --black: #000;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--white);
+}
+
+.container {
+  width: 100%;
+  padding: 0 80px;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-right {
+  align-items: flex-end;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mt-8px {
+  margin-top: 8px;
+}
+
+.mt-16px {
+  margin-top: 16px;
+}
+
+.mt-32px {
+  margin-top: 32px;
+}
+
+.mt-45px {
+  margin-top: 45px;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mr-16px {
+  margin-right: 16px;
+}
+
+.mr-80px {
+  margin-right: 80px;
+}
+
+.mr-160px {
+  margin-right: 160px;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+/* Header */
+header {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--green);
+  padding: 4px 0;
+}
+header img {
+  height: 60px; 
+}
+header ul {
+  list-style: none;
+  width: 35%;
+}
+header ul li {
+  display: block;
+}
+header ul li.active {
+  background-color: var(--dark-green);
+  padding: 11px 16px;
+}
+header ul li.active a {
+  color: var(--white);
+}
+/* ./Header */
+
+/* Jumbotron */
+section#jumbotron {
+  background-image: url("../images/jumbotron.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 450px;
+  color: var(--white);
+  padding-top: 80px;
+}
+section#jumbotron h1 {
+  font-size: 3rem;
+}
+section#jumbotron p {
+  font-size: 2rem;
+}
+/* ./Jumbotron */
+
+/* Search */
+section#search {
+  position: relative;
+  font-weight: 300;
+}
+section#search .search-container {
+  position: absolute;
+  top: -75px;
+  left: 80px;
+  width: 650px;
+  height: 150px;
+  background-color: var(--white);
+  border-radius: 16px;
+  box-shadow: 5px 5px 3px #1F7409;
+  padding: 1rem;
+}
+section#search .search-container span {
+  font-size: .7rem;
+}
+section#search .search-container input {
+  border: none;
+  border-bottom: 2px solid var(--black);
+  outline: none !important;
+}
+section#search .search-container button {
+  background-color: var(--green);
+  border: none;
+  padding: 8px 16px;
+  color: var(--white);
+}
+section#search .search-container button:hover {
+  background-color: var(--dark-green);
+}
+/* ./Search */
+
+/* Recommendation */
+section#recommendation {
+  margin-top: 135px;
+}
+section#recommendation h2 {
+  color: var(--green);
+}
+section#recommendation .navigation {
+  height: 40px;
+}
+section#recommendation .city-img {
+  width: 200px;
+}
+section#recommendation a {
+  background-color: var(--black);
+  padding: 8px 16px;
+  color: var(--white);
+}
+section#recommendation a:hover {
+  background-color: var(--green);
+  color: var(--white);
+}
+/* ./Recommendation */
+
+/* About */
+section#about {
+  margin-top: 135px;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 48px 0;
+}
+section#about h2 {
+  font-size: 4rem;
+}
+section#about a {
+  background-color: var(--white);
+  padding: 8px 32px;
+  color: var(--green);
+}
+section#about a:hover {
+  background-color: var(--green);
+  color: var(--white);
+}
+section#about p {
+  font-size: 1.25rem;
+  text-align: right;
+}
+section#about img {
+  width: 40%;
+}
+/* ./About */
+
+/* Contact */
+section#contact {
+  background-color: var(--green);
+  color: var(--white);
+  padding-bottom: 64px;
+}
+section#contact h3 {
+  font-size: 1.5rem;
+}
+section#contact i {
+  font-size: 2rem;
+}
+section#contact a {
+  font-size: 1.25rem;
+  color: var(--white)
+}
+section#contact ul {
+  padding-inline: 20px;
+}
+/* ./Contact */
+
+/* Footer */
+footer {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 16px 0;
+}
+/* ./Footer */

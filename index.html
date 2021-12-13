@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Web App</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/ff0893516d.js" crossorigin="anonymous"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./public/styles/index.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container d-flex justify-between items-center">
+      <img src="./public/images/logo.png" alt="Logo">
+
+      <ul class="d-flex justify-between items-center">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- ./Header -->
+
+  <main>
+    <!-- Jumbotron -->
+    <section id="jumbotron">
+      <div class="container">
+        <h1>Start your next travel experience</h1>
+        <p>Find your destination and recommendation travel activities</p>
+      </div>
+    </section>
+    <!-- ./Jumbotron -->
+
+    <!-- Search -->
+    <section id="search">
+      <form class="search-container d-flex flex-column">
+        <p class="font-bold">Your Destination <span class="font-light">(City Country)</span></p>
+
+        <input class="mt-8px" type="text" value="Surabaya, Jawa Timur, Indonesia" placeholder="Type you location">
+
+        <div class="d-flex justify-between mt-8px h-full">
+          <p class="font-bold">Travel Types</p>
+
+          <div class="d-grid grid-2">
+            <div>
+              <input type="checkbox" name="Mountains" id="mountain">
+              <label for="mountain">Mountains</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="City" id="city">
+              <label for="city">City</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="Beach" id="beach">
+              <label for="beach">Beach</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="themepark" id="themepark">
+              <label for="themepark">Theme Park</label>
+            </div>
+          </div>
+
+          <button type="submit" class="mt-auto font-light">Search</button>
+        </div>
+      </form>
+    </section>
+    <!-- ./Search -->
+
+    <!-- Recommendation -->
+    <section id="recommendation">
+      <div class="container d-flex flex-column">
+        <h2>Travel Recommendation for You</h2>
+
+        <p class="font-light mt-8px d-block ml-auto">See All Recommendations</p>
+
+        <div class="d-flex items-center justify-between mt-16px">
+          <img src="./public/images/arrow-left.png" alt="prev" class="navigation">
+
+          <div class="d-flex flex-column">
+            <img src="./public/images/yogyakarta.png" alt="Yogyakarta" class="city-img">
+            <p class="font-bold">Yogyakarta</p>
+            <p class="font-light">Indonesia</p>
+            <a href="#" class="d-block ml-auto">See details</a>
+          </div>
+
+          <div class="d-flex flex-column">
+            <img src="./public/images/sidney.png" alt="Sidney" class="city-img">
+            <p class="font-bold">Sidney</p>
+            <p class="font-light">Australia</p>
+            <a href="#" class="d-block ml-auto">See details</a>
+          </div>
+
+          <div class="d-flex flex-column">
+            <img src="./public/images/taipei.png" alt="Taipei" class="city-img">
+            <p class="font-bold">Taipei</p>
+            <p class="font-light">Taiwan</p>
+            <a href="#" class="d-block ml-auto">See details</a>
+          </div>
+
+          <div class="d-flex flex-column">
+            <img src="./public/images/london.png" alt="London" class="city-img">
+            <p class="font-bold">London</p>
+            <p class="font-light">United Kingdom</p>
+            <a href="#" class="d-block ml-auto">See details</a>
+          </div>
+
+          <img src="./public/images/arrow-right.png" alt="next" class="navigation">
+        </div>
+      </div>
+    </section>
+    <!-- ./Recommendation -->
+
+    <!-- About -->
+    <section id="about">
+      <div class="container d-flex justify-between">
+        <div class="d-flex flex-column justify-between items-right mr-80px">
+          <h2>About Us</h2>
+
+          <p class="font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+          <a href="#" class="d-block">Read More</a>
+
+        </div>
+
+        <img src="./public/images/about.png" alt="about">
+      </div>
+    </section>
+    <!-- ./About -->
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container d-flex">
+        <div class="d-flex flex-column mt-32px mr-160px">
+          <h3>Contact Us</h3>
+
+          <div class="d-flex items-center mt-32px">
+            <i class="fas fa-phone-alt mr-16px"></i>
+            <a href="tel:+62 8123456789">+62 8123456789</a>
+          </div>
+
+          <div class="d-flex items-center mt-32px">
+            <i class="far fa-envelope mr-16px"></i>
+            <a href="mailto:contact@xyz.com">contact@xyz.com</a>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column mt-32px">
+          <h3>Sitemap</h3>
+
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- ./Contact -->
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p class="font-bold">Copyright 2021 All Rights Reserved Company XYZ</p>
+    </div>
+  </footer>
+  <!-- ./Footer -->
+</body>
+</html>
